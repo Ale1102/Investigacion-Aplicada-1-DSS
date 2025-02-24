@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API de Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Lista de Productos</h1>
+    <ul id="product-list"></ul>
+
+    <h2>Agregar Producto</h2>
+    <form id="add-product-form">
+        <input type="text" id="product-name" placeholder="Nombre del producto" required>
+        <input type="text" id="product-description" placeholder="Descripción" required>
+        <input type="number" id="product-price" placeholder="Precio" required>
+        <button type="submit">Agregar</button>
+    </form>
+
+    <h2>Editar Producto</h2>
+    <form id="edit-product-form" style="display: none;">
+        <input type="hidden" id="edit-product-id">
+        <input type="text" id="edit-product-name" placeholder="Nombre del producto" required>
+        <input type="text" id="edit-product-description" placeholder="Descripción" required>
+        <input type="number" id="edit-product-price" placeholder="Precio" required>
+        <button type="submit">Actualizar</button>
+        <button type="button" id="cancel-edit">Cancelar</button>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>
